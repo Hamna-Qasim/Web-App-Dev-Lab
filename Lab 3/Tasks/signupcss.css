@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Times New Roman', Times, serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url(images3/pexels-juanpphotoandvideo-894695.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    font-weight: bold;
+    color: beige;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+.main {
+    width: 420px;
+    background-color: transparent;
+    border: 2px solid rgba(112, 75, 58, 0.2);
+    backdrop-filter: blur(15px);
+    color: beige;
+    border-radius: 10px;
+    padding: 30px 40px;
+}
+
+.main h1 {
+    color: beige;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.inputbox {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0;
+}
+
+.inputbox input {
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 0.1px solid beige;
+    border-radius: 40px;
+    font-size: 16px;
+    color: beige;
+    padding: 20px;
+}
+
+.inputbox input::placeholder {
+    color: beige;
+}
+
+.gender-box {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: 15px 0;
+    padding: 20px;
+}
+
+.gender-box label {
+    color: beige;
+}
+
+.main .btn {
+    width: 100%;
+    height: 45px;
+    background: beige;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgba(92, 65, 41, 0.952);
+    font-weight: 600;
+    cursor: pointer;
+    
+}
+
+.main .signup {
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+
+.signup p, .signup a {
+    color: beige;
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.signup a:hover {
+    color: rgba(92, 65, 41, 0.952);
+}

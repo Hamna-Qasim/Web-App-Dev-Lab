@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Transition/Animations</title>
+  </head>
+  <style>
+    .transition {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        word-spacing: 1.4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        }
+    .btn {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 0.5em 1em;
+        color:rgb(16, 62, 47);
+        background-color:rgb(224, 209, 209);
+        border-color: rgb(224, 209, 209);
+        border-radius: 5px;
+        transition: transform 0.3s ease 0s, background-color 0.3s, color 0.3s;
+    }
+    .btn:hover {
+        transform: translateY(-10px);
+        background-color: rgb(16, 62, 47);
+        color: rgb(224, 209, 209);
+    }
+
+    .animation {
+        margin: 0;
+        padding: 0;
+        line-height: 1.5;
+        word-spacing: 1.4px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+    @keyframes slideInLeft 
+    {
+        from{
+            transform: translateX(-300px);
+        }
+        to{
+            transform: translateX(0);
+        }
+    }
+    .heading{
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 2rem;
+        font-weight: 700;
+        padding: 0.5em 1em;
+        background-color:rgb(224, 209, 209);
+        border-color: rgb(224, 209, 209);
+        border-radius: 5px;
+        color: rgb(16, 62, 47);
+        animation: slideInLeft 1s ease-in 1s 1 normal both;
+        transform: translateX(-150px);
+    }
+
+  </style>
+  <body>
+    <div class="transition">
+    <button class="btn">Transition</button>
+    </div>
+    <div class="animation">
+        <h2 class="heading">Animation</h2>
+    </div>
+  </body>
+</html>

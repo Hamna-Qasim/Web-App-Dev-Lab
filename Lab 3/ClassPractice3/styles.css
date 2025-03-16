@@ -1,0 +1,31 @@
+body
+{
+    background-color: rgb(224, 211, 211);
+}
+
+.navbar
+{
+background-color: rgb(200, 81, 81);
+overflow: hidden;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+}
+
+.navbar .logo
+{
+    color: bisque;
+    font-size:x-large;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.links li
+{
+    display: inline-flex;
+}
+
+.links a{
+    color: black;
+}
