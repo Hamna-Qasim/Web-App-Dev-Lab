@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    div{
+        color: plum;
+    }
+    div:hover{
+        background-color: purple;
+    }
+</style>
+<body>
+    <button onclick="console.log('button was clicked!')">click me!</button>
+    <br>
+    <br>
+    <button onclick="console.log('button was clicked!');alert('hello!')">click me!</button>
+    <br>
+    <br>
+    <button ondblclick="console.log('button was clicked 2x')">click me 2 times</button>
+    <br>
+    <br>
+    <div onmouseover="console.log('you are inside div')">this is a box</div>
+    <br>
+    <br>
+    <button class="btn1">click clack</button>
+    <br>
+    <br>
+    <img class="uncolor" src="uncolored.jpg">
+</body>
+<script>
+    let btn1= document.querySelector(".btn1");
+    btn1.onclick=function()
+    {
+        console.log("button waas clicked");
+        let a=25;
+        a++;
+        console.log(a);
+    }
+    let div=document.querySelector("div");
+    div.onmouseover = () =>
+    {
+        console.log("CHECK OUT THE MIGHTY DIV");
+    };
+
+    document.addEventListener("DOMContentLoaded",function(){
+        var image= document.getElementsByClassName("uncolor")[0];
+        image.addEventListener("click", function()
+        {
+            if(image.src.includes("uncolored")) {
+                image.src="colored.jpg";
+            }
+            else
+            {
+                image.src="uncolored.jpg";
+            }   
+        })
+    });
+</script>
+</html>

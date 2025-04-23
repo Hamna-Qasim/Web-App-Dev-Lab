@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="task1.css">
+</head>
+<body>
+    <div id="container">
+        <h4>Light and Dark Mode Toggle</h4>
+        <label class="switch">
+        <input type="checkbox" onclick="changeMode()">
+        <span class="slider"></span>
+        </label>
+    </div>
+    <script>
+        function changeMode(){
+            var element= document.body;
+            element.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
